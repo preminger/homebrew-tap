@@ -3,7 +3,7 @@ cask "goctx" do
   name "goctx"
   desc "Propagate context.Context through Go call graphs automatically."
   homepage "https://github.com/preminger/goctx"
-  version "0.3.10"
+  version "0.3.11"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "goctx" do
   on_macos do
     on_intel do
       url "https://github.com/preminger/goctx/releases/download/v#{version}/goctx_#{version}_darwin_amd64.tar.gz"
-      sha256 "d5a1efd28a43962041caa117b69d39f79d50455b7338fa43a14484339f9d4660"
+      sha256 "31804d06564badad1944831768eb4a69bc0a6c11638e4f14f9bc92bed146c610"
     end
     on_arm do
       url "https://github.com/preminger/goctx/releases/download/v#{version}/goctx_#{version}_darwin_arm64.tar.gz"
-      sha256 "a09b2d7fd3d514b8f4163f2b7440c4688cf580ce530674767300030e0a99cd12"
+      sha256 "89152e3abcc8084313c18800af460b2e6e9f9004822a37072aa2ae7f0218c1fb"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/preminger/goctx/releases/download/v#{version}/goctx_#{version}_linux_amd64.tar.gz"
-      sha256 "caaa0c056a335b89d954b00fb1ec289aee06ed2d45a92d2ffa1487cd80ff791a"
+      sha256 "d421c124bd85dbd9b3fed53195d68052059754c2cf11b1693ac62cef6b407873"
     end
     on_arm do
       url "https://github.com/preminger/goctx/releases/download/v#{version}/goctx_#{version}_linux_arm64.tar.gz"
-      sha256 "9113c5d2d57f4a87243197d93e3042298e021edcac87113bb9d0c7ef016ddca4"
+      sha256 "49f9d85236aa1c41861fae684727452a88b6dd88abbd88fb8192da0d525c3baa"
     end
   end
 
