@@ -3,7 +3,7 @@ cask "goctx" do
   name "goctx"
   desc "Command-line Go utility that automatically adds missing 'plumbing' for `context.Context` parameters along the call-graph leading to a given function."
   homepage "https://github.com/preminger/goctx"
-  version "0.9.4"
+  version "0.10.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "goctx" do
   on_macos do
     on_intel do
       url "https://github.com/preminger/goctx/releases/download/v#{version}/goctx_#{version}_darwin_amd64.tar.gz"
-      sha256 "6c3839c02fbfc11085290c76ae2f6cfe7397d67da67341e20cba6ba8ce395acd"
+      sha256 "01be99bddd2e455c3b1099ff8f9556dbb39e0528a3ab318bcfcad4c216987b1d"
     end
     on_arm do
       url "https://github.com/preminger/goctx/releases/download/v#{version}/goctx_#{version}_darwin_arm64.tar.gz"
-      sha256 "59d97c350d34b575bbcc2493b56b273ca806b726da780ac519278c8ad23d64ca"
+      sha256 "1ee53b44b81db2cdc16234ab0b16f4c2c62d16be25fc3d809896e4c126511b16"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/preminger/goctx/releases/download/v#{version}/goctx_#{version}_linux_amd64.tar.gz"
-      sha256 "5b135d773cd51a7fcf2cfda924237487ce84c10a5970b359d67f5d9fa02f6302"
+      sha256 "0260c671a3568b27dacf83667b75137d0a01733fa6b7a00fc12d9588cdc5ca83"
     end
     on_arm do
       url "https://github.com/preminger/goctx/releases/download/v#{version}/goctx_#{version}_linux_arm64.tar.gz"
-      sha256 "a428b2a1bc9e2fa618793af2c69741b849de87c406ec745bbe787fbce25883ef"
+      sha256 "cd917392f2a624e1f04c409e4efd2917795beb2db1d47153afe9fa368b051fd4"
     end
   end
 
