@@ -5,13 +5,13 @@
 class Goctx < Formula
   desc "Command-line Go utility that automatically adds missing 'plumbing' for `context.Context` parameters along the call-graph leading to a given function."
   homepage "https://github.com/preminger/goctx"
-  version "0.17.27"
+  version "0.17.28"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/preminger/goctx/releases/download/v0.17.27/goctx_0.17.27_darwin_amd64.tar.gz"
-      sha256 "6bbbede9ba6744ef49562390b25134ffcae7c5ccec75fc23d6c424a559208400"
+      url "https://github.com/preminger/goctx/releases/download/v0.17.28/goctx_0.17.28_darwin_amd64.tar.gz"
+      sha256 "e27526440931b78e55029eccfbdc4476c59e9f5c6e50397c7efa500f12daa839"
 
       define_method(:install) do
         bin.install "goctx"
@@ -21,8 +21,8 @@ class Goctx < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/preminger/goctx/releases/download/v0.17.27/goctx_0.17.27_darwin_arm64.tar.gz"
-      sha256 "2ac801f4073037401782b1fd4f7fecd33255b07d72c2f1735f5d47db7abdb34c"
+      url "https://github.com/preminger/goctx/releases/download/v0.17.28/goctx_0.17.28_darwin_arm64.tar.gz"
+      sha256 "273c4d789ab032010169d2d8ff8f31659cd8997ed84d73e7ddad79df1136693f"
 
       define_method(:install) do
         bin.install "goctx"
@@ -35,8 +35,8 @@ class Goctx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/preminger/goctx/releases/download/v0.17.27/goctx_0.17.27_linux_amd64.tar.gz"
-      sha256 "19abb7bb118cef860df9d089898a9fdae16311209522dc45c31646d7a218a41a"
+      url "https://github.com/preminger/goctx/releases/download/v0.17.28/goctx_0.17.28_linux_amd64.tar.gz"
+      sha256 "0eec3a3f53977e5fde8564a0dabc9fd0d6ba0d0bf6cf1ee2618dcf1b2f8a19d5"
       define_method(:install) do
         bin.install "goctx"
         bash_completion.install "completions/goctx.bash" => "goctx"
@@ -45,8 +45,8 @@ class Goctx < Formula
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/preminger/goctx/releases/download/v0.17.27/goctx_0.17.27_linux_arm.tar.gz"
-      sha256 "901c645790a7db54fd5301698f1685f5bc8e57efd74be7e486b6b9c69b5bc071"
+      url "https://github.com/preminger/goctx/releases/download/v0.17.28/goctx_0.17.28_linux_arm.tar.gz"
+      sha256 "db8f24f9d270d210860e9cee5858e7f4f5afbd5d9e3225eeeead75b011dab808"
       define_method(:install) do
         bin.install "goctx"
         bash_completion.install "completions/goctx.bash" => "goctx"
@@ -55,8 +55,8 @@ class Goctx < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/preminger/goctx/releases/download/v0.17.27/goctx_0.17.27_linux_arm64.tar.gz"
-      sha256 "ff54dd4f40c9886cdb96255d6757c6907893bb259f4485ba60667e9a95b705cc"
+      url "https://github.com/preminger/goctx/releases/download/v0.17.28/goctx_0.17.28_linux_arm64.tar.gz"
+      sha256 "e08a9335325a2a02a1d4671866f45ba8c4c7aac6ad0a6cae0249caeef20a4b52"
       define_method(:install) do
         bin.install "goctx"
         bash_completion.install "completions/goctx.bash" => "goctx"
